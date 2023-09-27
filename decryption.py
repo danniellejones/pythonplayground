@@ -13,12 +13,12 @@ def main():
     plain_word = ""
     cipher_word = ""
 
-    alpha = {'a': 'm', 'b': 'r', 'c': '?', 'd': '?', 'e': 'l',
-             'f': '?', 'g': 'c', 'h': 'i', 'i': 'v', 'j': 'n',
-             'k': 's', 'l': '?', 'm': 'd', 'n': '?', 'o': 'o',
+    alpha = {'a': 'm', 'b': 'r', 'c': 'q', 'd': 'w', 'e': 'l',
+             'f': 'b', 'g': 'c', 'h': 'i', 'i': 'v', 'j': 'n',
+             'k': 's', 'l': 'x', 'm': 'd', 'n': '?', 'o': 'o',
              'p': 'g', 'q': 't', 'r': 'y', 's': 'a', 't': 'e',
-             'u': '?', 'v': '?', 'w': '?', 'x': '?', 'y': 'h',
-             'z': '?'}
+             'u': '?', 'v': 'p', 'w': 'u', 'x': '?', 'y': 'h',
+             'z': 'f'}
 
     # Convert the chosen word into the permute alphabet
     if plain_word != "" and cipher_word != "":
