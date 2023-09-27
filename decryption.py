@@ -10,12 +10,20 @@ def main():
     """
     Substitution Cipher
     """
-    alpha = {'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e',
-             'f': 'f', 'g': 'g', 'h': 'h', 'i': 'i', 'j': 'j',
-             'k': 'k', 'l': 'l', 'm': 'm', 'n': 'n', 'o': 'o',
-             'p': 'p', 'q': 'q', 'r': 'r', 's': 's', 't': 't',
-             'u': 'u', 'v': 'v', 'w': 'w', 'x': 'x', 'y': 'y',
-             'z': 'z'}
+    plain_word = "deterministically"
+    cipher_word = "mtqtbahjhkqhgseer"
+
+    alpha = {'a': '?', 'b': '?', 'c': '?', 'd': '?', 'e': '?',
+             'f': '?', 'g': '?', 'h': '?', 'i': '?', 'j': '?',
+             'k': '?', 'l': '?', 'm': '?', 'n': '?', 'o': '?',
+             'p': '?', 'q': '?', 'r': '?', 's': '?', 't': '?',
+             'u': '?', 'v': '?', 'w': '?', 'x': '?', 'y': '?',
+             'z': '?'}
+
+    # Convert the chosen word into the permute alphabet
+    for plain_char, cipher_char in zip(cipher_word, plain_word):
+        alpha[plain_char] = cipher_char
+
     keyword = ""
     cipher_text = "qyt ovtbsqhojse mhksmisjqsptk oz qyt ojt-qhat vsm ysit etm qo qyt mtiteovatjq oz gojmhqhojseer " \
                   "ktgwbt kqbtsa ghvytbk dyhgy sbt sfet qo btqshj qyt vokhqhit gysbsgqtbhkqhgk oz ojt-qhat vsmk dyhet " \
@@ -31,6 +39,7 @@ def display_plaintext(cipher_text, alpha):
     :param cipher_text: String to decipher
     :param alpha: Permute alphabet dictionary
     """
+    print(alpha)
     plaintext = ""
     for char in cipher_text:
         if char in alpha:
