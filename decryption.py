@@ -10,19 +10,20 @@ def main():
     """
     Substitution Cipher
     """
-    plain_word = "deterministically"
-    cipher_word = "mtqtbahjhkqhgseer"
+    plain_word = ""
+    cipher_word = ""
 
-    alpha = {'a': '?', 'b': '?', 'c': '?', 'd': '?', 'e': '?',
-             'f': '?', 'g': '?', 'h': '?', 'i': '?', 'j': '?',
-             'k': '?', 'l': '?', 'm': '?', 'n': '?', 'o': '?',
-             'p': '?', 'q': '?', 'r': '?', 's': '?', 't': '?',
+    alpha = {'a': 'm', 'b': 'r', 'c': '?', 'd': '?', 'e': 'l',
+             'f': '?', 'g': 'c', 'h': 'i', 'i': '?', 'j': 'n',
+             'k': 's', 'l': '?', 'm': 'd', 'n': '?', 'o': '?',
+             'p': '?', 'q': 't', 'r': 'y', 's': 'a', 't': 'e',
              'u': '?', 'v': '?', 'w': '?', 'x': '?', 'y': '?',
              'z': '?'}
 
     # Convert the chosen word into the permute alphabet
-    for plain_char, cipher_char in zip(cipher_word, plain_word):
-        alpha[plain_char] = cipher_char
+    if plain_word != "" and cipher_word != "":
+        for plain_char, cipher_char in zip(cipher_word, plain_word):
+            alpha[plain_char] = cipher_char
 
     keyword = ""
     cipher_text = "qyt ovtbsqhojse mhksmisjqsptk oz qyt ojt-qhat vsm ysit etm qo qyt mtiteovatjq oz gojmhqhojseer " \
