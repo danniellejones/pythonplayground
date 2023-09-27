@@ -15,9 +15,9 @@ def main():
 
     alpha = {'a': 'm', 'b': 'r', 'c': 'q', 'd': 'w', 'e': 'l',
              'f': 'b', 'g': 'c', 'h': 'i', 'i': 'v', 'j': 'n',
-             'k': 's', 'l': 'x', 'm': 'd', 'n': '?', 'o': 'o',
+             'k': 's', 'l': 'x', 'm': 'd', 'n': 'j', 'o': 'o',
              'p': 'g', 'q': 't', 'r': 'y', 's': 'a', 't': 'e',
-             'u': '?', 'v': 'p', 'w': 'u', 'x': '?', 'y': 'h',
+             'u': 'k', 'v': 'p', 'w': 'u', 'x': 'z', 'y': 'h',
              'z': 'f'}
 
     # Convert the chosen word into the permute alphabet
@@ -25,7 +25,7 @@ def main():
         for plain_char, cipher_char in zip(cipher_word, plain_word):
             alpha[plain_char] = cipher_char
 
-    keyword = ""
+    keyword = "SPECIFY"
     cipher_text = "qyt ovtbsqhojse mhksmisjqsptk oz qyt ojt-qhat vsm ysit etm qo qyt mtiteovatjq oz gojmhqhojseer " \
                   "ktgwbt kqbtsa ghvytbk dyhgy sbt sfet qo btqshj qyt vokhqhit gysbsgqtbhkqhgk oz ojt-qhat vsmk dyhet " \
                   "siohmhjp aokq oz qythb jtpsqhit skvtgqk. qyt veshjqtlq hk tjgbrvqtm hj awgy qyt ksat dsr sk qyt " \
